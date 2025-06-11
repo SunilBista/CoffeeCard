@@ -9,8 +9,17 @@ void main() {
           backgroundColor: Colors.brown[700],
           centerTitle: true,
         ),
-        body: const Text('Hello, World!'),
+        body: const Home(),
       ),
     ),
   );
+}
+
+class Home extends StatelessWidget {
+  const Home({super.key});
+
+  @override //override inherited
+  Widget build(BuildContext context) {
+    return const Text('Hello World');
+  }
 }
